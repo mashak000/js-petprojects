@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="get-username">
+        <h1>ROCK, PAPER, SCISSORS</h1><br>
+        <input type="text" placeholder="your name" class="name"><br>
+        <input type="submit" value="play" class="submit">
+    </div> 
+    <div class="game">
+        <div class="selections">
+            <button class="selection" data-selection="rock">👊</button>
+            <button class="selection" data-selection="paper">🖐</button>
+            <button class="selection" data-selection="scissors">✌️</button>
+        </div>
+        <div class="result-wrapper">
+            <div class="results">
+                <div>
+                    <span class="username"></span>
+                    <span class="result-score" data-your-score>0</span>
+                </div>
+                <div data-final-column>
+                    Computer:
+                    <span class="result-score" data-computer-score>0</span>
+                </div> 
+            </div>
+        </div>
+        <button class="end">Start Over</button>
+    </div>
+</body>
+</html>
