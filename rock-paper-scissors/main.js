@@ -79,7 +79,8 @@ window.onload = (event) => {
    document.querySelector('.game').style.display = 'none';
 };
 
-document.querySelector('.submit').addEventListener('click', e => {
+document.querySelector('form').addEventListener('submit', e => {
+    e.preventDefault();
     document.querySelector('.game').style.display = 'block';
     document.querySelector('.get-username').style.display = 'none';
     if (input.value === '') {
