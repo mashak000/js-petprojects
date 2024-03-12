@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="module"></script>
+    <title>Like flappy bird</title>
 </head>
 <body>
+    <div class="overlay"></div>
+    <div data-info class="info">
+        <h1>GAME OVER</h1>
+        <h3>press any key to start</h3>
+        <h1 data-subtitle class="subtitle hidden"></h1>
+    </div>
+    <div data-actor class="bird">
+        <img data-image-actor src="" alt="actor">
+    </div>
+    <div class="form">
+        <h1>Who will you play with?</h1>
+        <input style="width: 30%;" type="url" placeholder="insert link to an image" class="form-control"><br>
+        <h1>OR</h1>
+        <input style="width: 30%; padding-bottom: 45px" data-file type="file" name="avatarka" class="form-control form-control-lg" id="formFileLg"><br>
+        <button data-link type="submit" class="btn btn-outline-light">start</button>
+    </div>
     
 </body>
 </html>
